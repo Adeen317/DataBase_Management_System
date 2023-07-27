@@ -1,0 +1,24 @@
+def Update(self):
+        if self.var_MobileNumber.get()=="":
+           messagebox.showerror("Error","please enter mobile number",parent=self.root)
+        else:
+            conn=mysql.connector.connect(host="localhost",user="root",password="1234567890",database="jewellery")
+            my_cursor=conn.cursor()
+            my_cursor.execute("Update customer set Name=%s,Mobile=%s,Address=%s,PostCode=%s,Gender=%s,IdNumber=%s,Email=%s,Nationality=%s,IdProof=%s where ReferenceNo=%s",(
+                                                                                                                                                                                                                                        
+                                                                                                                                                                                     self.var_CustomerName.get(),
+                                                                                                                                                                                     self.var_MobileNumber.get(),
+                                                                                                                                                                                     self.var_CustomerAddress.get(),
+                                                                                                                                                                                     self.var_PostCode.get(),
+                                                                                                                                                                                     self.var_CustomerGender.get(),
+                                                                                                                                                                                     self.var_IdNumber.get(),
+                                                                                                                                                                                     self.var_CustomerEmail.get(),
+                                                                                                                                                                                     self.var_CustomerNationality.get(),
+                                                                                                                                                                                     self.var_IdProofType.get(),
+                                                                                                                                                                                     self.var_CustomerReferenceNo.get()
+                                                                                                                                                                                    ))
+            
+            conn.commit()  
+            self.fatch_data()
+            conn.close()         
+            messagebox.showinfo("Update","Customer details has been updated successfully",parent=self.root)

@@ -1,0 +1,88 @@
+def forget_pass():
+    def change_password():
+        if user2.get()=='' or pass_word.get()=='' or re_password.get()=='':
+            messagebox.showerror('Error','All Fields are Required')
+        elif pass_word.get() != re_password.get():
+            messagebox.showerror('Error','Password Mismatch')
+        else:
+            con=sql.connect(host='localhost',user='root',password='ayaan',database='userdata1')
+            mycursor=con.cursor()
+            query='select * from data where username=%s'
+            mycursor.execute(query, (user2.get()))
+            row=mycursor.fetchone()
+            if row==None:
+                messagebox.showerror('Error','Incorrect Username')
+            else:
+                query='update data set password=%s where username=%s'
+                mycursor.execute(query,(pass_word.get(),user2.get()))
+                con.commit()
+                con.close()
+                messagebox.showinfo('Successful','Password is Changed')
+                clear()
+                import login_page
+                
+    window=Tk()
+    window.title('Change Password')
+
+    bgPic=ImageTk.PhotoImage(file='resetbg.jpg')
+    bdLabel1=Label(window,image=bgPic)
+    bgLabel1.grid(row=0,column=0)
+
+    heading=Label(root,width=20,text='Reset Password',font=('Bodoni MT Black',23),
+              bd=0,bg='DeepPink3',fg='White')
+    heading.place(x=10,y=30)
+    heading1=Label(root,text='Username',font=('Times New Roman',15,'bold'),
+                   bd=0,bg='Lightgrey',fg='Black')
+    heading1.place(x=30,y=85)
+
+    user2=Entry(root,width=35,font=('Times New Roman',15),bg='Lightgrey',fg='Black')
+    user2.place(x=30,y=110)
+
+    Frame12=Frame(root,width=354,height=1,bg='Black')
+    Frame12.place(x=30,y=135)
+
+
+    heading22=Label(root,text='New Password',font=('Times New Roman',15,'bold'),
+                    bd=0,bg='Lightgrey',fg='Black')
+    heading22.place(x=30,y=155)
+
+
+    pass_word=Entry(root,width=35,font=('Times New Roman',15),bg='Lightgrey',fg='Black')
+    pass_word.place(x=30,y=180)
+
+
+    Frame22=Frame(root,width=354,height=1,bg='Black')
+    Frame22.place(x=30,y=205)
+
+
+    button12=Button(root,text='Show',font=('Times New Roman',10,'bold'),
+                    bd=0,bg='Lightgrey',fg='Black',cursor='hand2',
+                    command=hide,activeforeground='Lightgrey')
+    button12.place(x=345,y=182)
+
+
+    heading32=Label(root,text='Confirm New Password',font=('Times New Roman',15,'bold'),
+                    bd=0,bg='Lightgrey',fg='Black')
+    heading32.place(x=30,y=215)
+
+
+    re_password=Entry(root,width=35,font=('Times New Roman',15),bg='Lightgrey',fg='Black')
+    re_password.place(x=30,y=240)
+
+    Frame32=Frame(root,width=354,height=1,bg='Black')
+    Frame32.place(x=30,y=265)
+
+    button7=Button(root,text='Show',font=('Times New Roman',10,'bold'),
+                   bd=0,bg='Lightgrey',fg='Black',cursor='hand2',
+                   command=hide1,activeforeground='Lightgrey')
+    button7.place(x=345,y=242)
+
+
+    submit=Button(root,width=36,text='Submit',font=('Times New Roman',15,'bold'),
+                  bd=0,bg='Purple',fg='white',cursor='hand2',
+                  activeforeground='purple',command=connect_database)
+    submit.place(x=10,y=280)
+
+    window.mainloop()
+
+        

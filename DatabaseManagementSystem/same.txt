@@ -1,0 +1,8 @@
+query='select * from data where username=%s'
+            mycursor.execute(query,(email.get()))
+
+        row=mycursor.fetchone()
+        if row != None:
+            messagebox.showerror('Error','Username Already exists')
+            
+        mycursor.execute(query,(name.get(),email.get(),user.get(),password.get()))
