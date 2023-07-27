@@ -3,4 +3,4 @@ This Database Management System is created using MySQL for database and Python(L
 
 ## Implementation/Designing:
 #### Login Page
-- [Login page](https://github.com/Adeen317/DataBase_Management_System/blob/main/DatabaseManagementSystem/login_page.py)https://github.com/Adeen317/DataBase_Management_System/blob/main/DatabaseManagementSystem/login_page.py)
+- [Login page](https://github.com/Adeen317/DataBase_Management_System/blob/main/DatabaseManagementSystem/login_page.py)
