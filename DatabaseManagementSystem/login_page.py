@@ -25,7 +25,7 @@ def login_user():
         messagebox.showerror('Error','All fields are required')
     else:
         try:
-            con=sql.connect(host='localhost',user='root',password='ayaan1234')
+            con=sql.connect(host='localhost',user='root',password='*****')
             mycursor=con.cursor()
         except:
             messagebox.showerror('Error','Connection is not established Try Again')
