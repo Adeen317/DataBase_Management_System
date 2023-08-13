@@ -38,7 +38,7 @@ def insert():
         if teamname.get()=="":
            messagebox.showerror("Error","please enter club")
         else:
-            con=sql.connect(host="localhost",user="root",password="ayaan1234",database="userdata1")
+            con=sql.connect(host="localhost",user="root",password="",database="userdata1")
             my_cursor=con.cursor()
             
             query='update league set win=%s,draw=%s,lose=%s,Goal_diff=%s,points=%s,MatchPlayed=%s where Team_name=%s'
