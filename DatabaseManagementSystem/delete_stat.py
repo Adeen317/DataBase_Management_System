@@ -36,7 +36,7 @@ def o(event):
         
 def insert():
     try:
-        con=sql.connect(host='localhost',user='root',password='ayaan1234',database='userdata1')
+        con=sql.connect(host='localhost',user='root',password='******',database='userdata1')
         mycursor=con.cursor()
         query='create table league(MatchPlayed varchar(10) not null,Team_name varchar(30) primary key not null,win varchar(10) not null,draw varchar(10) not null,lose varchar not null,Goal_diff varchar(10) not null,points varchar(10) not null)'
         mycursor.execute(query)
