@@ -56,7 +56,7 @@ def log_out():
     
 def search():
     try:
-        con=sql.connect(host='localhost',user='root',password='ayaan1234',database='userdata1')
+        con=sql.connect(host='localhost',user='root',password='*****',database='******')
         mycursor=con.cursor()
         query='select * from league order by points desc'
         mycursor.execute(query)
