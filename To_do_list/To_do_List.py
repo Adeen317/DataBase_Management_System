@@ -28,7 +28,7 @@ def connect_database():
         messagebox.showerror('Error','All Fields are Required')
     else:
         try:
-            con=sql.connect(host='localhost',user='root',password='ayaan1234')
+            con=sql.connect(host='localhost',user='root',password='')
             mycursor=con.cursor()
         except:
             messagebox.showerror('Error','Database Connectivity Issue,Please Try Again.')
@@ -53,7 +53,7 @@ def connect_database():
 
 def markasdone():
     try:
-        con=sql.connect(host='localhost',user='root',password='ayaan1234',database='todolist')
+        con=sql.connect(host='localhost',user='root',password='',database='todolist')
         mycursor=con.cursor()
     except:
         mycursor.execute('use todolist')
@@ -75,7 +75,7 @@ def markasdone():
 
 def search():
     try:
-        con=sql.connect(host='localhost',user='root',password='ayaan1234',database='todolist')
+        con=sql.connect(host='localhost',user='root',password='',database='todolist')
         mycursor=con.cursor()
         query='select * from list'
         mycursor.execute(query)
