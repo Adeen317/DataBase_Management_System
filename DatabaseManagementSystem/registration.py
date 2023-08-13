@@ -68,7 +68,7 @@ def connect_database():
         messagebox.showerror('Error','Please Accept Terms & Condition')
     else:
         try:
-            con=sql.connect(host='localhost',user='root',password='ayaan1234')
+            con=sql.connect(host='localhost',user='root',password='*******')
             mycursor=con.cursor()
         except:
             messagebox.showerror('Error','Database Connectivity Issue,Please Try Again.')
