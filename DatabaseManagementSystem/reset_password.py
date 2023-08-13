@@ -60,7 +60,7 @@ def connect_database():
     elif password.get() != repassword.get():
         messagebox.showerror('Error','Password Mismatch')
     else:
-        con=sql.connect(host='localhost',user='root',password='ayaan1234',database='userdata1')
+        con=sql.connect(host='localhost',user='root',password='',database='userdata1')
         mycursor=con.cursor()
         query='select * from data where username=%s and email=%s'
         mycursor.execute(query, (user.get(),email.get()))
