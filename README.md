@@ -1,4 +1,4 @@
-# GUI Interfaces
+# GUI INTERFACES
 
 ## SportStandings Pro
 This Database Management System is created using MySQL for database and Python(Lib tkinter,mysqlconnector) for interface. It consist of login page with create new account and forget password pages as well all interlinked with eachother.
@@ -18,9 +18,8 @@ This Database Management System is created using MySQL for database and Python(L
 
 - [Todo List](https://github.com/Adeen317/DataBase_Management_System/blob/main/To_do_list/To_do_List.py)
 
-## Simple Calculator
+## SIMPLE CALCULATOR:
 ![Simple Calculator gif](https://github.com/Adeen317/GUI_Interfaces_Using_Tkinter/assets/112985225/dd1de35e-15d7-48f0-b2f3-27634735a106)
-
 
 - [Simple Calculator](https://github.com/Adeen317/GUI_Interfaces_Using_Tkinter/blob/main/Simple%20Calculator/Calculator.py)
 
