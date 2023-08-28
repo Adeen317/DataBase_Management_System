@@ -15,12 +15,12 @@ def off():
 def show(value):
     global equation
     equation+=value
-    heading.config(text=equation)
+    final.config(text=equation)
 
 def clear():
     global equation
     equation=""
-    heading.config(text=equation)
+    final.config(text=equation)
 
 def calculate():
     global equation
@@ -32,11 +32,11 @@ def calculate():
         except:
             result = "Error"
             equation = ""
-    heading.config(text=result)
+    final.config(text=result)
 
 #GUI
-heading=Label(root,width=25,height=2,text='',font=('Times new roman',30,'bold'))
-heading.pack()
+final=Label(root,width=25,height=2,text='',font=('Times new roman',30,'bold'))
+final.pack()
 
 Button(root,text='AC',width=5,height=1,font=('Times new roman',30,'bold'),
               bg='skyblue4',fg='Black',cursor='hand2',activeforeground='black',command=lambda: clear()).place(x=10,y=130)
