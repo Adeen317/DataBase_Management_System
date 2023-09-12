@@ -13,16 +13,17 @@ This Database Management System is created using MySQL for database and Python(L
 - [Forgot Password?](https://github.com/Adeen317/DataBase_Management_System/blob/main/DatabaseManagementSystem/reset_password.py)
 
 ## TO DO LIST:
+- [Todo List](https://github.com/Adeen317/DataBase_Management_System/blob/main/To_do_list/To_do_List.py)
 
 ![TO-DO-LIST](https://github.com/Adeen317/GUI_Interfaces_Using_Tkinter/assets/112985225/decb56a0-2f46-4f3d-8791-2f4916f043c5)
 
 
-- [Todo List](https://github.com/Adeen317/DataBase_Management_System/blob/main/To_do_list/To_do_List.py)
 
 ## SIMPLE CALCULATOR:
+- [Simple Calculator](https://github.com/Adeen317/GUI_Interfaces_Using_Tkinter/blob/main/Simple%20Calculator/Calculator.py)
+
 ![Simple Calculator gif](https://github.com/Adeen317/GUI_Interfaces_Using_Tkinter/assets/112985225/dd1de35e-15d7-48f0-b2f3-27634735a106)
 
-- [Simple Calculator](https://github.com/Adeen317/GUI_Interfaces_Using_Tkinter/blob/main/Simple%20Calculator/Calculator.py)
 
 
 
