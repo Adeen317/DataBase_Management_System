@@ -1,6 +1,6 @@
 # GUI INTERFACES
 ## Table of Contents
-![SportStandingsPro Web-App](https://github.com/Adeen317/DataBase_Management_System/assets/112985225/8c34c775-5bbe-423d-80e0-d6173380c3cc)
+![SportStandingsPro Web-App](https://github.com/Adeen317/GUI_Interfaces_Using_Tkinter/tree/main/DatabaseManagementSystem)
 ![Todo List](https://github.com/Adeen317/GUI_Interfaces_Using_Tkinter/tree/main/To_do_list)
 ![Simple Calculator](https://github.com/Adeen317/GUI_Interfaces_Using_Tkinter/tree/main/Simple%20Calculator)
 
